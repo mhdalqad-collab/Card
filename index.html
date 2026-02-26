@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohammed Alqaderi</title>
 
+  <!-- ✅ ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     :root{
       --bg1:#0b132b;
@@ -40,7 +43,6 @@
       border-radius: var(--radius);
       box-shadow: 0 18px 50px var(--shadow);
       backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
       padding: 26px 18px 18px;
     }
 
@@ -60,99 +62,84 @@
       object-fit: cover;
       border: 3px solid rgba(255,255,255,0.85);
       box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-      background: rgba(255,255,255,0.08);
     }
 
     h1{
       font-size: 22px;
-      line-height: 1.15;
       margin: 2px 0 0;
-      letter-spacing: 0.2px;
     }
 
     .subtitle{
-      margin:0;
       font-size: 14px;
       color: var(--muted);
     }
 
-    .btn{
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap: 10px;
-      width:100%;
-      padding: 15px 14px;
+    .btn {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 15px;
       margin: 10px 0;
       border-radius: 14px;
-      text-decoration:none;
+      text-decoration: none;
       font-size: 16px;
       font-weight: 700;
       color: #fff;
-      border: 1px solid rgba(255,255,255,0.12);
-      transition: transform .12s ease, opacity .12s ease;
-      user-select:none;
-      -webkit-tap-highlight-color: transparent;
+      transition: 0.2s;
     }
 
-    .btn:active{
-      transform: scale(0.985);
-      opacity: 0.92;
+    .btn:hover{
+      transform: scale(1.03);
+    }
+
+    .btn i {
+      position: absolute;
+      left: 16px;
+      font-size: 18px;
     }
 
     .linkedin{ background:#0a66c2; }
-    .whatsapp{ background:#25D366; color:#0b132b; border-color: rgba(0,0,0,0.10); }
+    .whatsapp{ background:#25D366; color:#0b132b; }
     .website{ background:#6366f1; }
-    .cv{ background:#f4b400; color:#111827; border-color: rgba(0,0,0,0.10); }
+    .cv{ background:#f4b400; color:#111827; }
 
-    .footer{
-      margin-top: 14px;
-      font-size: 12px;
-      color: rgba(255,255,255,0.55);
-      text-align:center;
-    }
-
-    /* Small phones */
-    @media (max-width: 360px){
-      .card{ padding: 22px 14px 14px; }
-      .avatar{ width: 92px; height: 92px; }
-      h1{ font-size: 20px; }
-      .btn{ font-size: 15px; padding: 14px 12px; }
-    }
   </style>
 </head>
 
 <body>
   <div class="card">
     <div class="top">
-      <!-- Put your image file name here (must be in the same folder) -->
+
       <img class="avatar" src="IMG_0855.png" alt="Mohammed Alqaderi" />
 
       <div>
         <h1>Mohammed Alqaderi</h1>
-        <p class="subtitle">Founder &amp; CTO — SelkTeck</p>
+        <p class="subtitle">Founder & CTO — SelkTeck</p>
       </div>
     </div>
 
-    <a class="btn linkedin" href="https://www.linkedin.com/in/mohammed-al-qaderi-a084bb21a" target="_blank" rel="noopener">
+    <a class="btn linkedin" href="https://www.linkedin.com/in/mohammed-al-qaderi-a084bb21a" target="_blank">
+      <i class="fab fa-linkedin"></i>
       Connect on LinkedIn
     </a>
 
-    <a class="btn whatsapp" href="https://wa.me/96891918769" target="_blank" rel="noopener">
+    <a class="btn whatsapp" href="https://wa.me/96891918769" target="_blank">
+      <i class="fab fa-whatsapp"></i>
       Chat on WhatsApp
     </a>
 
-    <a class="btn website" href="https://inura-hero.vercel.app/" target="_blank" rel="noopener">
+    <a class="btn website" href="https://inura-hero.vercel.app/" target="_blank">
+      <i class="fas fa-globe"></i>
       Visit Company Website
     </a>
 
-    <!-- Put your CV file name here (must be in the same folder) -->
-    <a class="btn cv" href="Alqaderi-CV-.pdf" target="_blank" rel="noopener">
+    <a class="btn cv" href="Alqaderi-CV-.pdf" target="_blank">
+      <i class="fas fa-file-pdf"></i>
       View My CV
     </a>
 
-    
   </div>
 </body>
 </html>
-
